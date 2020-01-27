@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Scrum a arte de fazer o dobro do trabalho na metade do tempo</title>
+    <!-- CSS nativo -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Script Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="center-align bg">
+    <header>
+        <div class="container" >
+            <figure>
+                <img class="size-img center-align" src="img/scrum.jpg" alt="">
+                <p>---------------------</p>
+                <h2 class="font">Scrum a arte de fazer o dobro do trabalho na metade do tempo</h2> 
+                <p class="text font" >Livro de Jeff Sutherland</p>
+                <p class="text font" >Jeff criou o Scrum em meados de 1993, junto com Ken Schwaber, para ser uma forma mais rápida, eficaz e confiável de criar softwares.Porém hoje em dia o Scrum já é usado para inúmeras aplicações no mundo inteiro.Seus usos vão desde ensinar alunos na Holanda, promover ações sociais em Uganda até reformular a constituição de um país.O Scrum é uma metodologia ágil para a gestão de projetos e segue o caminho oposto ao da metodologia em cascata.No método em cascata tudo deve ser definido no início e imutável ao longo do projeto.O que isso causa?Requisitos inesperados vindos do cliente aumentam o valor e prazos do produto.O mercado em si pode mudar e o produto da forma imaginada inicialmente não servir mais para nada.</p>
+                <p class="text font" >"Qualquer tentativa de restringir o empreendimento humano de qualquer natureza a diagramas coloridos é bobagem e está fadada ao fracasso. Não é dessa maneira que as pessoas trabalham e não é dessa forma que os projetos avançam. Não é como as ideias florescem ou como as coisas excepcionais são feitas."</p>
+                <div class="row" >
+                    <div class="col-md-6 col-sm-12">
+                        <button type="button" class="btn btn-warning btn-block btn-sm" data-toggle="modal" data-target="#knowauthor">Conheça o Autor</button>
+                    </div>
+                    <div class="col-md-6 col-sm-12" >
+                        <button type="button" class="btn btn-dark btn-block btn-sm" data-toggle="modal" data-target="#telaEmail">Baixe aqui sua amostra</button>
+                    </div>
+                </div>
+            </figure>
+        </div>
+</header>
+<!-- Modal -->
+<div class="modal fade" id="knowauthor" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">Sobre o Autor</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        </div>
+        <div class="modal-body">
+            Jeff Sutherland is one of the creators of the Scrum software development process. Together with Ken Schwaber, he created Scrum as a set of processes at OOPSLA'95. Sutherland helped to write the Agile Manifesto in 2001. He is a writer of The Scrum Guide.
+        </div>
+        <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Ok</button>
+        </div>
+    </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="telaEmail" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Deixe sua mensagem</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <input type="email" class="form-control space-margin " id="emailTxt" placeholder="Digite seu E-mail">
+                <textarea class="form-control" id="areaTxt" rows="3" placeholder="Escreva a sua mensagem" ></textarea>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-block btn-danger " data-dismiss="modal" onclick="enviar()">Enviar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/sales.js"></script>
+</body>
+</html>

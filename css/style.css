@@ -1,0 +1,33 @@
+.center-align{
+    text-align: center;
+    padding-top: 70px;
+}
+header{
+    text-align: center;
+}
+.bg {
+    background-color: #DD3F4E;
+}
+.size-img{
+    width: 30%;
+}
+.text{
+    font-size: 16pt;
+    color: white;
+}
+h2 {
+    color: white;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url(' fonts/Avenir.ttc ');
+    font-weight: normal;
+    font-style: normal;
+}
+.font{
+    font-family: "Avenir"; 
+} 
+.space-margin{
+    margin-bottom: 10px;
+} 
+
